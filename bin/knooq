@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+const path = require('path');
+const config = require(path.resolve(process.cwd(), 'knooq.config'));
+
+require('../lib/knooq')(config).then(() => {
+  process.exit(0);
+}).catch((err) => {
+  console.log('Generation failed!', err);
+  process.exit(1);
+});

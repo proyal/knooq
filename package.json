@@ -1,0 +1,40 @@
+{
+  "name": "knooq",
+  "version": "0.1.0",
+  "description": "Generate schema objects intended for use with knex.js",
+  "author": {
+    "name": "Parker Royal",
+    "url": "https://github.com/proyal"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/proyal/knooq.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
+  "keywords": [
+    "sql",
+    "knex",
+    "knexjs",
+    "jooq"
+  ],
+  "scripts": {},
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "bin": {
+    "knooq": "bin/knooq"
+  },
+  "devDependencies": {
+    "mysql": "^2.16.0",
+    "mysql2": "^1.6.5"
+  },
+  "dependencies": {
+    "camel-case": "^3.0.0",
+    "constant-case": "^2.0.0",
+    "esformatter": "^0.10.0"
+  }
+}
