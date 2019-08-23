@@ -15,7 +15,12 @@
     "node": ">=10"
   },
   "keywords": [
+    "knooq",
     "sql",
+    "query",
+    "mysql",
+    "mysql2",
+    "mssql",
     "knex",
     "knexjs",
     "jooq"
