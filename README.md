@@ -33,15 +33,22 @@ You must provide:
 * Connection string - Formatted as is appropriate for the client library
 * Location for the generated file.
 
+#### mysql and mysql2
 ```javascript
-// mysql and mysql2
 module.exports = {
   client: 'mysql2', // Or 'mysql'
-  connection: 'mysql://root:root@localhost:3306/mydatabase',
-  output: 'src/schema.js',
+  connection: 'mysql://user:password@localhost:3306/mydatabase',
+  output: 'src/schema.js'
 };
 ```
-
+#### mssql
+```javascript
+module.exports = {
+  client: 'mssql',
+  connection: 'mssql://user:password@localhost:1433/mydatabase',
+  output: 'src/schema.js'
+};
+````
 ### Running knooq
 
 Once the configuration file is complete, running knooq couldn't
